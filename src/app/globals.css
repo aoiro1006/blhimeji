@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-900 antialiased;
+    background-color: #f8fafc;
+    background-image:
+      radial-gradient(circle at 0% 0%, rgba(29, 91, 191, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 100% 100%, rgba(230, 57, 70, 0.04) 0%, transparent 50%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2.5 rounded-full font-medium
+           hover:bg-primary-light transition-all hover:shadow-md
+           focus:outline-none focus:ring-2 focus:ring-primary/40;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary border-2 border-primary/30 px-6 py-2.5 rounded-full font-medium
+           hover:bg-primary-pale hover:border-primary transition-all
+           focus:outline-none focus:ring-2 focus:ring-primary/30;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-gray-100/80 p-6;
+  }
+
+  .card-fun {
+    @apply card relative overflow-hidden transition-all duration-300
+           hover:shadow-card-hover hover:-translate-y-0.5;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2.5 border border-gray-200 rounded-xl
+           focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary
+           transition-colors;
+  }
+
+  .score-input {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+
+  .score-input::-webkit-outer-spin-button,
+  .score-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold text-primary-dark flex items-center gap-3;
+  }
+
+  .section-title::before {
+    content: "";
+    @apply w-1.5 h-7 rounded-full bg-gradient-to-b from-primary to-accent flex-shrink-0;
+  }
+
+  .tag-blue {
+    @apply text-xs bg-primary-pale text-primary px-2.5 py-0.5 rounded-full font-medium;
+  }
+
+  .tag-red {
+    @apply text-xs bg-accent-pale text-accent-dark px-2.5 py-0.5 rounded-full font-medium;
+  }
+
+  .boccia-ball {
+    @apply rounded-full shadow-lg;
+  }
+
+  .admin-editor-actions .btn-primary,
+  .admin-editor-actions .btn-secondary {
+    @apply max-sm:px-3 max-sm:py-2 max-sm:text-xs whitespace-normal text-center;
+  }
+
+  .admin-editor-actions .btn-secondary {
+    @apply max-sm:flex-1 max-sm:min-w-[calc(50%-0.25rem)];
+  }
+}
+
+@media print {
+  body.entry-sheet-printing * {
+    visibility: hidden;
+  }
+
+  body.entry-sheet-printing [data-entry-print-root],
+  body.entry-sheet-printing [data-entry-print-root] * {
+    visibility: visible;
+  }
+
+  body.entry-sheet-printing [data-entry-print-root] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  body.entry-sheet-printing [data-entry-page] {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  body.entry-sheet-printing [data-entry-page]:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  @page {
+    size: A3 portrait;
+    margin: 8mm;
+  }
+}

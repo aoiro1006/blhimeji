@@ -1,0 +1,99 @@
+{
+  "season": "2025",
+  "title": "2025シーズン",
+  "summary": "2025年ボッチャリーグ姫路の全節を終えた最終順位表と大会写真です。",
+  "finalizedAt": "2025-12-15T00:00:00.000Z",
+  "coverImageUrl": "/archives/2025/cover.jpg",
+  "standings": {
+    "leagueA": [
+      {
+        "rank": 1,
+        "team": { "teamNumber": 1, "name": "ひびキャッツ", "shortName": "ひびキャッツ", "color": "#1a4d8f" },
+        "rankingPoints": 412,
+        "played": 8,
+        "wins": 6,
+        "losses": 2,
+        "pointsFor": 42,
+        "pointsAgainst": 28,
+        "pointDiff": 14
+      },
+      {
+        "rank": 2,
+        "team": { "teamNumber": 3, "name": "つばさタイガー", "shortName": "つばさタイガー", "color": "#2a9d8f" },
+        "rankingPoints": 398,
+        "played": 8,
+        "wins": 5,
+        "losses": 3,
+        "pointsFor": 38,
+        "pointsAgainst": 32,
+        "pointDiff": 6
+      },
+      {
+        "rank": 3,
+        "team": { "teamNumber": 7, "name": "アイリスフラミンゴ", "shortName": "アイリスフラミン", "color": "#8ac926" },
+        "rankingPoints": 385,
+        "played": 8,
+        "wins": 5,
+        "losses": 3,
+        "pointsFor": 35,
+        "pointsAgainst": 33,
+        "pointDiff": 2
+      }
+    ],
+    "leagueB": [
+      {
+        "rank": 1,
+        "team": { "teamNumber": 2, "name": "ひびきレインボードックス", "shortName": "ひびきレインボー", "color": "#e63946" },
+        "rankingPoints": 405,
+        "played": 8,
+        "wins": 6,
+        "losses": 2,
+        "pointsFor": 40,
+        "pointsAgainst": 30,
+        "pointDiff": 10
+      },
+      {
+        "rank": 2,
+        "team": { "teamNumber": 4, "name": "つばさホーク", "shortName": "つばさホーク", "color": "#f4a261" },
+        "rankingPoints": 391,
+        "played": 8,
+        "wins": 5,
+        "losses": 3,
+        "pointsFor": 36,
+        "pointsAgainst": 34,
+        "pointDiff": 2
+      },
+      {
+        "rank": 3,
+        "team": { "teamNumber": 6, "name": "リプルス2", "shortName": "リプルス2", "color": "#1982c4" },
+        "rankingPoints": 378,
+        "played": 8,
+        "wins": 4,
+        "losses": 4,
+        "pointsFor": 33,
+        "pointsAgainst": 35,
+        "pointDiff": -2
+      }
+    ]
+  },
+  "gallery": [
+    {
+      "id": "g1",
+      "url": "/archives/2025/01.jpg",
+      "caption": "開会式",
+      "sortOrder": 0
+    },
+    {
+      "id": "g2",
+      "url": "/archives/2025/02.jpg",
+      "caption": "試合の様子",
+      "sortOrder": 1
+    },
+    {
+      "id": "g3",
+      "url": "/archives/2025/03.jpg",
+      "caption": "表彰式",
+      "sortOrder": 2
+    }
+  ]
+}

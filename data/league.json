@@ -1,0 +1,2234 @@
+{
+  "season": "2026",
+  "lastUpdated": "2026-07-04T11:30:57.332Z",
+  "teams": [
+    {
+      "id": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "teamNumber": 1,
+      "name": "ひびキャッツ",
+      "shortName": "ひびキャッツ",
+      "color": "#ed9999",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "3f02c99d-c58f-4c21-806c-0adc9558b030",
+          "name": "まり"
+        },
+        {
+          "id": "bc24b0e2-2111-4d15-955e-901cd0b5edba",
+          "name": "しんご"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "teamNumber": 2,
+      "name": "ひびきレインボードックス",
+      "shortName": "ひびきレインボー",
+      "color": "#d9d9d9",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "65032a63-8e10-4827-8ee4-d406463f8404",
+          "name": "かずま"
+        },
+        {
+          "id": "56cd17cf-859d-4e16-a53f-43bc3ee0dae1",
+          "name": "あけみ"
+        },
+        {
+          "id": "6c9614fd-947d-4589-9edd-8810fd613512",
+          "name": "ごうが"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "teamNumber": 3,
+      "name": "つばさタイガー",
+      "shortName": "つばさタイガー",
+      "color": "#ffd869",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "18aae6e0-99e7-46c9-b2df-68a90405162b",
+          "name": "こうの"
+        },
+        {
+          "id": "0cbe2336-eaa3-460a-b868-b95b6391f852",
+          "name": "ただし"
+        },
+        {
+          "id": "894b0b0b-2a22-417c-9882-5e7402e0bfc1",
+          "name": "ひろみ"
+        },
+        {
+          "id": "0259da2f-1d21-43fa-9d22-705688015432",
+          "name": "いわもと"
+        },
+        {
+          "id": "71d21517-7fac-4a47-a5d6-2cd0556e65a4",
+          "name": "みどりかわ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "teamNumber": 4,
+      "name": "つばさホーク",
+      "shortName": "つばさホーク",
+      "color": "#68a852",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "bb571464-ca1f-40d3-b584-74168d08b5c7",
+          "name": "すず"
+        },
+        {
+          "id": "a9b225a6-0357-4944-9737-e44ee326db8e",
+          "name": "けいこ"
+        },
+        {
+          "id": "17e2e456-5a4e-4fbf-93aa-c6599c40c998",
+          "name": "たかのり"
+        },
+        {
+          "id": "772e0570-8fcb-4f3b-a1e4-26c7d3e01723",
+          "name": "まどか"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "314e4611-29b1-4951-b752-d36c07d5ff43",
+      "teamNumber": 5,
+      "name": "リプルスペンギン",
+      "shortName": "リプルスペンギン",
+      "color": "#cadbf7",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "2f14cf19-0dcd-4fa3-8b7c-7e162c202961",
+          "name": "みなこ"
+        },
+        {
+          "id": "3886525e-a990-49d3-8480-8877dee898c0",
+          "name": "あやか"
+        },
+        {
+          "id": "0c4f1b35-84b8-4e3d-86e0-1de59edc3a8f",
+          "name": "すずか"
+        },
+        {
+          "id": "62e6dc55-4926-4a59-ae1b-4b1db04ad662",
+          "name": "けんご"
+        },
+        {
+          "id": "72f703a7-9f42-492b-928f-454728a7b40a",
+          "name": "じょうじ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "e31116dc-f2f4-432d-abb5-09210815b369",
+      "teamNumber": 6,
+      "name": "リプルス2",
+      "shortName": "リプルス2",
+      "color": "#ffe598",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "teamNumber": 7,
+      "name": "アイリスフラミンゴ",
+      "shortName": "アイリスフラミン",
+      "color": "#f5ccca",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "5f519414-3feb-4064-a541-4a9fa1ce52ae",
+          "name": "よしむら"
+        },
+        {
+          "id": "95d6bd2d-9a9d-4524-b8d1-4626c74f6f6e",
+          "name": "もりもと"
+        },
+        {
+          "id": "40d3fb9a-8b2b-4830-9475-88da10a8c979",
+          "name": "やまだ"
+        },
+        {
+          "id": "8a71c0be-2d6b-4634-a057-78f99fdc3e0b",
+          "name": "たなか2"
+        },
+        {
+          "id": "915232d6-ba72-4092-98f4-3b44aa201375",
+          "name": "なえむら2"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "teamNumber": 8,
+      "name": "アイリスシャーク",
+      "shortName": "アイリスシャーク",
+      "color": "#a4c2f8",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "bc57773c-ac39-4dc3-83d4-678569cbf165",
+          "name": "あだち"
+        },
+        {
+          "id": "c8211bac-9ff9-47a5-95ce-cc4aad5fea7e",
+          "name": "めぐろ"
+        },
+        {
+          "id": "fb61fa36-cb87-43f6-8cc5-199f6e301ae5",
+          "name": "なえむら"
+        },
+        {
+          "id": "ce0a6608-19e3-431e-86a1-665ec7dadcf6",
+          "name": "にしむら"
+        },
+        {
+          "id": "fcd0845e-4384-48ab-9b99-cb017f8e77e3",
+          "name": "まつおか2"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "teamNumber": 9,
+      "name": "アイリスカメレオン",
+      "shortName": "アイリスカメレオ",
+      "color": "#91c57b",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "fba555e4-e9a1-4119-8403-2b1502f5773a",
+          "name": "まつおか"
+        },
+        {
+          "id": "84230f31-f851-426c-82cd-fe9d91b69a06",
+          "name": "しばはら"
+        },
+        {
+          "id": "b07840fc-5584-4459-97f9-1125d4a33d2c",
+          "name": "いいづか"
+        },
+        {
+          "id": "47077504-70ef-4736-a423-619231160e1c",
+          "name": "こうやま"
+        },
+        {
+          "id": "8a79ad56-2bcb-4718-b251-e2c1a0123f4d",
+          "name": "ながさわ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "teamNumber": 10,
+      "name": "スペシャルチーム",
+      "shortName": "スペシャルチーム",
+      "color": "#999999",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "778c8fb3-90b5-4375-84b4-6c91c3530ee9",
+          "name": "せつみ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "4702b85f-8327-4e41-86c9-b2e5d1f55805",
+      "teamNumber": 13,
+      "name": "わかばタコス",
+      "shortName": "わかばタコス",
+      "color": "#eb9a99",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "39dc236f-18ed-430c-8079-fe915834ab38",
+      "teamNumber": 14,
+      "name": "わかばカバズ",
+      "shortName": "わかばカバズ",
+      "color": "#b6a6d7",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "aa99a72f-5f82-402d-ad24-197e66b4cd9a",
+      "teamNumber": 15,
+      "name": "獨協フォックス",
+      "shortName": "獨協フォックス",
+      "color": "#f2b46b",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "teamNumber": 16,
+      "name": "あいあいインコ",
+      "shortName": "あいあいインコ",
+      "color": "#b7d6aa",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "e4394795-932d-4170-9431-3425dcd04867",
+          "name": "すぎもと"
+        },
+        {
+          "id": "d3c5c5ba-75c8-4a5c-ac38-96d2fe0a1432",
+          "name": "いわかわ"
+        },
+        {
+          "id": "c150bf04-7827-4c07-ab89-53f906ce04e7",
+          "name": "ほんだ"
+        },
+        {
+          "id": "143af86b-7062-4b33-a2c5-aafbb949906f",
+          "name": "ます"
+        },
+        {
+          "id": "b78941e1-52da-4c3b-bc9f-136fcd146587",
+          "name": "なかの"
+        },
+        {
+          "id": "26cc94f0-b7b0-45ce-be6f-99a708f4658e",
+          "name": "きた"
+        },
+        {
+          "id": "48a84195-16e0-4a36-9703-56f0b7c322eb",
+          "name": "あべ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "teamNumber": 17,
+      "name": "あいあいモンキーズ",
+      "shortName": "あいあいモンキー",
+      "color": "#b45f04",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "8bd7b017-d87b-4a30-849f-65678fbf1081",
+          "name": "わだ"
+        },
+        {
+          "id": "eb8bab3d-be44-4aff-a3f9-b2774b8ccfb4",
+          "name": "かばしま"
+        },
+        {
+          "id": "5c0ee861-9bae-4f90-b38d-dfe92fb240ee",
+          "name": "あべ"
+        },
+        {
+          "id": "24b5a5b6-73c3-4d33-9582-d7c45116a566",
+          "name": "としお"
+        },
+        {
+          "id": "56a0b7d8-407e-40d8-bda7-b00d4b7060a3",
+          "name": "くどう"
+        },
+        {
+          "id": "b61cf5e5-fd19-4724-8cab-f9ab53e60eb7",
+          "name": "みやた"
+        },
+        {
+          "id": "5c47e4be-3f4b-4a11-986a-ab7e1a79d538",
+          "name": "きた"
+        },
+        {
+          "id": "f348989e-1117-4c94-8684-80ca5fb4a75e",
+          "name": "たけうち"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "ec125b1a-a91a-42a2-9f60-beccebca1f76",
+      "teamNumber": 18,
+      "name": "獨協ウルフ",
+      "shortName": "獨協ウルフ",
+      "color": "#b4a7d3",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "259d6016-3a15-4a12-91a3-4fd3f62deee4",
+      "teamNumber": 19,
+      "name": "出会いの里B",
+      "shortName": "出会いの里B",
+      "color": "#f7b169",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "teamNumber": 20,
+      "name": "身障協チキンパワーズ",
+      "shortName": "身障協チキンパワ",
+      "color": "#d30002",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "62b73b50-8c13-4051-ae30-faa18674a751",
+          "name": "ひろこ"
+        },
+        {
+          "id": "4fdaf9b3-1f4d-4a68-95a5-b3b05019dbc4",
+          "name": "よしじ"
+        },
+        {
+          "id": "ccef8ffb-d1a8-4459-86d2-3f7a8c0b0f38",
+          "name": "のりこ"
+        },
+        {
+          "id": "8ceece32-9d28-4302-90d1-3179c8f332b1",
+          "name": "かない"
+        },
+        {
+          "id": "b5108eaf-4019-4b68-b7d7-f4a39c01d01f",
+          "name": "かじき"
+        },
+        {
+          "id": "d14d1cae-6ea7-493d-9f1c-02075c631b5f",
+          "name": "れいこ"
+        },
+        {
+          "id": "317b31d1-dbc5-4c4f-9686-13d7cd0e583f",
+          "name": "うちはし"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "afa41cb7-d0d3-40e9-b5ea-b0fddc66769e",
+      "teamNumber": 21,
+      "name": "ぞうさんチーム",
+      "shortName": "ぞうさんチーム",
+      "color": "#6fa8df",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "2106f581-90ad-43ec-bd1c-0a7b461223d0",
+      "teamNumber": 22,
+      "name": "わかばひつじ",
+      "shortName": "わかばひつじ",
+      "color": "#dcd9d4",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "d296acfe-9743-4215-b0c4-7170a20d69e9",
+      "teamNumber": 24,
+      "name": "出会いの里ホープ",
+      "shortName": "出会いの里ホープ",
+      "color": "#f9cb97",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "161106c9-f894-47ca-aae6-672dcfc312b0",
+      "teamNumber": 25,
+      "name": "オレンジうさぎ",
+      "shortName": "オレンジうさぎ",
+      "color": "#e89036",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "257bc9d7-7647-457b-ae75-8840b25c6642",
+          "name": "はじめ"
+        },
+        {
+          "id": "afabded4-b88d-4e7c-98ec-3ff2b75139a0",
+          "name": "あきこ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "139f6b6c-6b22-4e50-9077-416ebbe3fc05",
+      "teamNumber": 26,
+      "name": "マイドリームコアラ",
+      "shortName": "マイドリームコア",
+      "color": "#9fc5ec",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "15bfb7b5-13d3-406b-8e53-8b6b645cca4f",
+      "teamNumber": 27,
+      "name": "マイドリームカメ",
+      "shortName": "マイドリームカメ",
+      "color": "#91c47f",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "4dd3bc27-0ac4-42d9-8d48-5655f17c46d1",
+      "teamNumber": 28,
+      "name": "手をつなぐラッコ",
+      "shortName": "手をつなぐラッコ",
+      "color": "#cadafc",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "fbe55f39-553a-42f5-add9-5caf76208f19",
+      "teamNumber": 29,
+      "name": "ルネスハムスター",
+      "shortName": "ルネスハムスター",
+      "color": "#fed966",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "7af03b07-c60e-4394-9fc5-9a0478483b74",
+      "teamNumber": 30,
+      "name": "オレンジライオン",
+      "shortName": "オレンジライオン",
+      "color": "#f7b267",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "a7bd1c3b-eade-4277-b22a-ebfbb89be94a",
+      "teamNumber": 31,
+      "name": "花より団子",
+      "shortName": "花より団子",
+      "color": "#f7cbc8",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "80776123-91ed-4926-ace6-7101c28dc468",
+          "name": "たみこ"
+        },
+        {
+          "id": "13bd2545-0b5e-49b7-bb76-3da255c45427",
+          "name": "えつこ"
+        },
+        {
+          "id": "a6492468-b3b2-4258-a946-96b479f89989",
+          "name": "みつえ"
+        },
+        {
+          "id": "eed359e5-7fe2-4cd5-a69c-d68535f41594",
+          "name": "けいこ"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+      "teamNumber": 32,
+      "name": "ペガサス",
+      "shortName": "ペガサス",
+      "color": "#cadbf7",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "3de3d012-ab67-473b-9963-892ac2940806",
+          "name": "ふたまた"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "teamNumber": 33,
+      "name": "ホワイトユニコーン",
+      "shortName": "ホワイトユニコー",
+      "color": "#eef0ef",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "c00e96e2-d779-415a-a4ef-69f99b68de49",
+          "name": "よしむら"
+        },
+        {
+          "id": "4d2f6939-84f8-4730-ae80-321df660137e",
+          "name": "もりもと"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "04b26017-56a8-4f4b-b8fb-b40e1d55faa9",
+      "teamNumber": 34,
+      "name": "ホワイトエナガ",
+      "shortName": "ホワイトエナガ",
+      "color": "#fdf4cb",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "857bac10-c305-473b-8c5b-cc7e429875a6",
+          "name": "しもむら"
+        },
+        {
+          "id": "9729cb3a-e176-4c6a-bed2-05d90a500f11",
+          "name": "たなか"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "07190a9a-a862-4a16-b5f8-04acbd9f7a9e",
+      "teamNumber": 35,
+      "name": "チームゲスト",
+      "shortName": "チームゲスト",
+      "color": "#d33b23",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "6e6cb8c1-534c-4021-ada0-10ca3bb468c5",
+      "teamNumber": 36,
+      "name": "三愛園スワンズ",
+      "shortName": "三愛園スワンズ",
+      "color": "#fbe6cb",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "9e64071e-2fdc-4061-af0f-db52572155a2",
+      "teamNumber": 37,
+      "name": "みどりスプリング",
+      "shortName": "みどりスプリング",
+      "color": "#f7cbcc",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "32bbd646-54d9-456c-85cc-0c30609181bf",
+          "name": "よしふみ"
+        },
+        {
+          "id": "cd92fcb4-db90-4219-a535-209400dfcff8",
+          "name": "ともあき"
+        },
+        {
+          "id": "f9edbf32-6995-4d29-930c-4eadc819812f",
+          "name": "のりゆき"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "5b0f3e8a-11be-4ca0-9576-22bdea9a8d04",
+      "teamNumber": 38,
+      "name": "みどりサマー",
+      "shortName": "みどりサマー",
+      "color": "#cbe4fa",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "c3cd6a18-e634-4f84-b95d-e47b3a55b65a",
+          "name": "とものり"
+        },
+        {
+          "id": "595476d9-d97d-4e63-b5b3-12b3399a6f30",
+          "name": "ゆうすけ"
+        },
+        {
+          "id": "14265730-fe1d-420a-a45c-aefd365538a6",
+          "name": "ともや"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "91b99f7e-2497-49ec-9d7f-61980a69b218",
+      "teamNumber": 39,
+      "name": "みどりオータム",
+      "shortName": "みどりオータム",
+      "color": "#dd7e6a",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "60e7b067-a28a-4147-b1f2-50135d12c413",
+          "name": "こうたろう"
+        },
+        {
+          "id": "d347da0a-a857-48a3-84b2-fddb376d6a04",
+          "name": "ともゆき"
+        },
+        {
+          "id": "c0cd3ba0-e21d-4d5f-a12e-15a35b14bed1",
+          "name": "ひろゆき"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "3b7afb79-1885-462b-8c46-1b722e403d89",
+      "teamNumber": 40,
+      "name": "みどりウィンター",
+      "shortName": "みどりウィンター",
+      "color": "#d9d9d9",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "2c829e49-8d59-4920-b8c1-5026c780ebef",
+      "teamNumber": 41,
+      "name": "太子町レッド",
+      "shortName": "太子町レッド",
+      "color": "#f5ccca",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "25f6d53f-22e0-4dec-982b-00b8e734b2d9",
+      "teamNumber": 42,
+      "name": "太子町ブルー",
+      "shortName": "太子町ブルー",
+      "color": "#d1e2f2",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    },
+    {
+      "id": "72c6d1d4-722b-44be-b6a1-8deef08d4752",
+      "teamNumber": 43,
+      "name": "にこさる",
+      "shortName": "にこさる",
+      "color": "#dcccb3",
+      "imageUrl": "",
+      "players": [
+        {
+          "id": "52a9a849-284f-4ced-9470-36b4f9e59b55",
+          "name": "りょうま"
+        },
+        {
+          "id": "76ba9851-2ed6-4416-b927-e0255d12752d",
+          "name": "つとむ"
+        },
+        {
+          "id": "ab699fdd-ae11-46fe-932c-c7301e1e6ad6",
+          "name": "つきと"
+        },
+        {
+          "id": "15149c9e-75f2-4b86-aae1-ddb6f74e7d21",
+          "name": "いぶき"
+        }
+      ],
+      "displayLeague": "A"
+    },
+    {
+      "id": "c4f9a394-9e1a-44ee-8d33-c733f8cb9508",
+      "teamNumber": 44,
+      "name": "鹿島朝日高校",
+      "shortName": "鹿島朝日高校",
+      "color": "#e69b96",
+      "imageUrl": "",
+      "players": [],
+      "displayLeague": "A"
+    }
+  ],
+  "rounds": [
+    {
+      "id": "round-1",
+      "type": "league",
+      "number": 1,
+      "subNumber": 1,
+      "name": "第1節",
+      "date": "2026-06-06",
+      "venue": "姫路市総合福祉会館",
+      "participatingTeamIds": [
+        "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+        "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+        "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+        "3f338629-5445-40ac-a8c6-93adfcc110fd",
+        "88eb67c7-8b95-436c-bb5a-c2421b722707",
+        "4ae29d48-5de8-4025-9401-35afe87dab56",
+        "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+        "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+        "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+        "f04ec21f-867f-463e-8d55-7520f798133c",
+        "1d41053f-cc34-4f80-858a-db0d71d7f931",
+        "249bd172-bc0a-49fe-9caf-3a783fdd1164"
+      ],
+      "time": "13:00~",
+      "held": false,
+      "resultsFinished": true
+    },
+    {
+      "id": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "type": "league",
+      "number": 2,
+      "subNumber": 1,
+      "name": "第2節",
+      "date": "2026-07-04",
+      "venue": "姫路市立障害者体育館",
+      "participatingTeamIds": [
+        "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+        "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+        "4ae29d48-5de8-4025-9401-35afe87dab56",
+        "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+        "f04ec21f-867f-463e-8d55-7520f798133c",
+        "1d41053f-cc34-4f80-858a-db0d71d7f931",
+        "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+        "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+        "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+        "88eb67c7-8b95-436c-bb5a-c2421b722707",
+        "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+        "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+        "3f338629-5445-40ac-a8c6-93adfcc110fd",
+        "314e4611-29b1-4951-b752-d36c07d5ff43"
+      ],
+      "time": "13:00~",
+      "held": false,
+      "resultsFinished": true,
+      "additionalMatches": {
+        "enabled": true,
+        "mode": "embedded"
+      }
+    },
+    {
+      "id": "54a56923-32fe-4c3b-9210-6760d7a05101",
+      "type": "league",
+      "number": 3,
+      "subNumber": 1,
+      "name": "第3節",
+      "date": "2026-08-08",
+      "venue": "姫路市立障害者体育館",
+      "participatingTeamIds": [
+        "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+        "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+        "f04da26e-4ecc-4c45-a298-5fb4fd60aaef"
+      ],
+      "time": "13:00~",
+      "held": false,
+      "additionalMatches": {
+        "enabled": true,
+        "mode": "embedded"
+      }
+    },
+    {
+      "id": "e5f94eda-b4dd-43bc-a199-7fdab0025e46",
+      "type": "league",
+      "number": 4,
+      "subNumber": 1,
+      "name": "第4節",
+      "date": "2026-09-12",
+      "venue": "姫路市立障害者体育館",
+      "participatingTeamIds": [],
+      "time": "13:00~",
+      "held": false
+    },
+    {
+      "id": "e6fffede-1772-48c6-ae23-e3ec8abb5187",
+      "type": "league",
+      "number": 5,
+      "subNumber": 1,
+      "name": "第5節",
+      "date": "2026-10-10",
+      "venue": "姫路市立障害者体育館",
+      "participatingTeamIds": [],
+      "time": "13:00~",
+      "held": false
+    },
+    {
+      "id": "251e8ef1-70d4-46a2-a901-9b3728b30479",
+      "type": "other",
+      "number": 0,
+      "subNumber": 1,
+      "name": "練習試合",
+      "date": "",
+      "venue": "",
+      "participatingTeamIds": [],
+      "held": true
+    },
+    {
+      "id": "c3c77c61-5306-4c89-b242-792d037f80d4",
+      "type": "league",
+      "number": 6,
+      "subNumber": 1,
+      "name": "第6節",
+      "date": "",
+      "venue": "",
+      "participatingTeamIds": [],
+      "held": true
+    }
+  ],
+  "roundAssignments": [
+    {
+      "roundId": "round-1",
+      "teamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "group": "A"
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "group": "A"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "group": "A"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "group": "A"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "group": "A"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "group": "A"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "group": "A"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "group": "B"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "group": "B"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "group": "B"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "group": "B"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "group": "C"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "group": "C"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "group": "C"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "314e4611-29b1-4951-b752-d36c07d5ff43",
+      "group": "C"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+      "group": "C"
+    },
+    {
+      "roundId": "54a56923-32fe-4c3b-9210-6760d7a05101",
+      "teamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "group": "D"
+    },
+    {
+      "roundId": "54a56923-32fe-4c3b-9210-6760d7a05101",
+      "teamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "group": "D"
+    },
+    {
+      "roundId": "54a56923-32fe-4c3b-9210-6760d7a05101",
+      "teamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "group": "D"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "group": "D"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "group": "D"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "group": "D"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "group": "D"
+    }
+  ],
+  "matches": [
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "slotOrder": 0,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "c6a45717-622b-4b0e-8c70-784d5d2746b5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 1,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "6c7504bc-a428-4b27-85ef-9b0a7806d1f5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 2,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "464f6cd8-8db4-46e4-842d-79a77cf8ca73"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 3,
+      "homeScore": 0,
+      "awayScore": 6,
+      "status": "completed",
+      "id": "66c85a84-7be2-48eb-9493-38e72033ef7f"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 4,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "378f72a4-02a4-40c7-838b-bcee6c7b45f5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 5,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "00ccd197-e8cc-4b5c-8b7c-9b39721ac2e3"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 6,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "af88b285-6e4e-4393-aa1a-1114e962d834"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 7,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "d62ccc5f-74c6-4528-8491-40b170d50c1a"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 8,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "57e1d31e-8fc4-4ed9-9bb6-2d1e30a3e0e3"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 9,
+      "homeScore": 7,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "6eb43b89-8ac4-4a71-9900-b6677be21622"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 10,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "b9d61ba7-c861-42ad-98ea-614824d83d66"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 11,
+      "homeScore": 5,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "42a636c1-976a-4f1f-a3f0-661d3d2f4521"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 12,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "cb3517d6-ddd7-4167-baa7-a03ac623efa8"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 13,
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "abf253ad-8494-497c-878b-6bf6d8eadcfc"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 14,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "4582c001-514b-45a3-9159-84ce2686ae98"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 15,
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "a22c7d49-b61a-418e-bfda-2fee79a895f4"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 16,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "394139ab-41b7-4cf7-a854-15f09d563eb1"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "slotOrder": 17,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "07985830-c9e8-4e8b-b97c-011815615c7a"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 18,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "4ee94f5d-fe32-4706-8365-6a8f972551eb"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 19,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "43afcc84-4a95-4e9e-877b-754e5847b001"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 20,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "3cae3ab9-8c47-4bf3-bec5-865d047cb1dc"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 21,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "d958ecde-2d8e-4d81-9b0d-21fe4e06e546"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "slotOrder": 22,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "626b6bc8-5d2c-4262-abaa-817b1efd018a"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 23,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "48b1e41b-fd88-440d-a138-bee5d328b28a"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 24,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "506dfecf-4658-42fc-a44d-9822d9bd7b0d"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 25,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "a777f2c3-daba-4b00-908c-2fbaddd88f5e"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 26,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "7cdba1a1-7ff0-4bcb-8fa9-f050bfc100d5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "slotOrder": 27,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "f3f617a1-f132-4a04-ba03-2f08579c9bfb"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 28,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "0a4c7da2-7532-4c84-99e9-2b13d2aae4e5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 29,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "274d31da-ad09-42a8-908f-627e2440dfdb"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 30,
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "757621f4-646c-4425-b3f1-fc1b0a9131c4"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 31,
+      "homeScore": 0,
+      "awayScore": 6,
+      "status": "completed",
+      "id": "9a56fc58-baff-457e-bdac-111d2d99fca5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "awayTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "slotOrder": 32,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "cefea677-f6e4-42c6-80f4-6dcfec30b82d"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 33,
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "2084af52-184b-4b3f-abdf-c4986919f84a"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 34,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "c64ba43c-756f-4379-b533-31531d607d40"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 35,
+      "homeScore": 1,
+      "awayScore": 5,
+      "status": "completed",
+      "id": "d733b7ac-ba5e-4c3f-8a7d-68abd5c9c0d8"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 36,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "a7c149fa-1b65-447b-9dbe-de73767e1038"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "slotOrder": 37,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "f11a02c7-58d0-47ff-acb2-c5ca8f9df1ca"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 38,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "6b8f4e37-3269-4a23-a862-5afb7c262829"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 39,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "ab4fc669-bebe-4a68-97b8-807bb717252b"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 40,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "be225035-a045-4aab-a226-d86e363d1060"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "slotOrder": 41,
+      "homeScore": 5,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "68467f9c-47ea-4bf5-a9b2-e0c191b724ae"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "slotOrder": 42,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "fd38a8cd-82a8-4e8b-aaab-d04978121d29"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 43,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "679b1041-0989-4d24-a1f6-6f89613ffed7"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 44,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "40b1cf40-1952-4268-acf0-1ec57482c1b6"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 45,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "b96a279c-fc05-42fc-a6f5-db39090158d5"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "awayTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "slotOrder": 46,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "6c1d016e-7722-402e-821a-6fdec914a5cf"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 47,
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "3a021535-a343-478a-9664-aa98b23cc307"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 48,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "3d5eb07b-a6bf-4654-af3e-ecea18d66003"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 49,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "3987b870-0b74-446c-aad9-65eb795db2a0"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 50,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "a49aba9d-f8c4-4df5-a969-78b13bdd60ad"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "slotOrder": 51,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "a87821cc-001d-463f-afd3-d72af0c24bf8"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 52,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "9e08d56d-1722-4328-a0b4-6733af48dfc8"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 53,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "0834abe7-f842-4145-9273-a2cd8506310c"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 54,
+      "homeScore": 5,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "7a65f4fb-bf2a-4751-aa03-8e2495e4d9d4"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 55,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "61e300eb-4f4a-40ea-b311-50a8f783b83c"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "slotOrder": 56,
+      "homeScore": 3,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "4925626e-43c3-4961-a138-742d0bee4e39"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 57,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "d885dd60-5351-4332-9b14-de1a0b0e2aea"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 58,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "c7c979e7-80f6-403c-9aaf-558711e3351e"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 59,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "92398309-bef1-4d2f-bf24-2f0f8cddf326"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 60,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "42a67646-f531-49a5-8aa5-df3f9e52e177"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "slotOrder": 61,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "fa38dd52-8322-401e-bc37-a229f2aa7064"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 62,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "7514a67e-6f29-4773-b8e9-72f5a9d13e4e"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 63,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "1ca2f362-e7ad-4e27-9d25-6ce7d1bb15cd"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 64,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "584256a2-0a84-4cb9-a347-3049e848960a"
+    },
+    {
+      "roundId": "round-1",
+      "group": "A",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 65,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "fce4c15f-c772-4ffa-b890-90f5950c429f"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 0,
+      "homeScore": 0,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "9ec906b2-b463-439a-97b6-33ea923f2882"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "D",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 0,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "69e3e949-3619-4429-84e9-cf9b315a79e5"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "B",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 1,
+      "homeScore": 5,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "7a8cec73-8515-4e1b-97dd-69c633a70b74"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "D",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 1,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "14ee2d5b-0533-4378-ae8f-9e992d7c0fc4"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+      "slotOrder": 2,
+      "homeScore": 3,
+      "awayScore": 5,
+      "status": "completed",
+      "id": "685c107c-bcb0-4108-b49c-770c64bfb60e"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "D",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "slotOrder": 2,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "d6a9a6a1-4cfb-4a2c-96cd-608ba21d20d3"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 3,
+      "homeScore": 4,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "cc236339-043c-47dd-b943-5bb659d08a41"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "D",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 3,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "49c1d707-fd53-4db8-a9a5-cb761106d7a7"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "B",
+      "homeTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 4,
+      "homeScore": 4,
+      "awayScore": 3,
+      "status": "completed",
+      "id": "33e91c87-e73e-4b6e-9d7e-7da8334359b1"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "D",
+      "homeTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 4,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "316de216-42b7-412c-93a1-1f0e80bf2867"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "awayTeamId": "314e4611-29b1-4951-b752-d36c07d5ff43",
+      "slotOrder": 5,
+      "homeScore": 0,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "165becd0-04a5-40f1-a98f-cf121c211894"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "D",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 5,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "4ca33dd6-5aec-4bec-a38c-bc18493841fd"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 6,
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "47ed9b6d-5587-4a44-bf37-d20fc8d49b9c"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "B",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "slotOrder": 7,
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "00f0f262-6ae1-4efb-abb3-ab3f72bc127f"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+      "slotOrder": 8,
+      "homeScore": 0,
+      "awayScore": 7,
+      "status": "completed",
+      "id": "84c2838b-492f-4808-bdb5-7b7b4705a70d"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "awayTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "slotOrder": 9,
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "d5719a76-a02a-4ec8-9866-eaddc70852f3"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "B",
+      "homeTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 10,
+      "homeScore": 0,
+      "awayScore": 4,
+      "status": "completed",
+      "id": "f8fba76f-3c2b-4550-b279-e4b0e7400e45"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 11,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "c9dfd0d6-e749-4c94-94f8-8c8c49f8ff48"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "slotOrder": 12,
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "67f6a660-365c-4345-8433-f2731fe7501c"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "awayTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "slotOrder": 13,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "bceaaf27-be4b-4402-9a5a-77ca8aa8bb1c"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "B",
+      "homeTeamId": "603b6678-ebb0-40f0-b18e-b9df051e7ec5",
+      "awayTeamId": "3f338629-5445-40ac-a8c6-93adfcc110fd",
+      "slotOrder": 14,
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "a262cf7e-e253-40cc-8d0c-af0cc2eb0d67"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "B",
+      "homeTeamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "awayTeamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "slotOrder": 15,
+      "homeScore": 2,
+      "awayScore": 3,
+      "status": "scheduled",
+      "id": "6305ef4a-0d65-4c6e-99bc-34113ecffab4"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "314e4611-29b1-4951-b752-d36c07d5ff43",
+      "slotOrder": 16,
+      "homeScore": 0,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "7352f51f-6861-4ece-a0dc-af17c21dabe2"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 17,
+      "homeScore": 6,
+      "awayScore": 0,
+      "status": "completed",
+      "id": "80850fad-4082-46ed-9b6d-92f8e98805fb"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "slotOrder": 18,
+      "homeScore": 0,
+      "awayScore": 2,
+      "status": "completed",
+      "id": "12c89356-ec88-4e72-ba23-c896ca1b9952"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "slotOrder": 19,
+      "homeScore": 0,
+      "awayScore": 3,
+      "status": "completed",
+      "id": "8d84accd-2cee-4f6b-8136-3258ac95b587"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "4ae29d48-5de8-4025-9401-35afe87dab56",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 20,
+      "homeScore": 1,
+      "awayScore": 4,
+      "status": "completed",
+      "id": "11b563b9-91ad-49eb-9e98-99760106d884"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "88eb67c7-8b95-436c-bb5a-c2421b722707",
+      "slotOrder": 21,
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "completed",
+      "id": "ba21f916-8099-4a24-a2cb-7b520f9b2aad"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "314e4611-29b1-4951-b752-d36c07d5ff43",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 22,
+      "homeScore": 3,
+      "awayScore": 4,
+      "status": "completed",
+      "id": "e2d3b565-09ed-4e69-88ff-6fb615030995"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "A",
+      "homeTeamId": "4d45c8b5-97ca-44b3-aa68-c0de0d296c79",
+      "awayTeamId": "e207d8b1-92ce-4ff7-a47b-90e249ed3765",
+      "slotOrder": 23,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "1fec7316-d471-46d4-b6e7-57def5a15ee3"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "249bd172-bc0a-49fe-9caf-3a783fdd1164",
+      "awayTeamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "slotOrder": 24,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "530c1126-95c6-486f-81ae-31e7541eeb18"
+    },
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "group": "C",
+      "homeTeamId": "314e4611-29b1-4951-b752-d36c07d5ff43",
+      "awayTeamId": "3e4d4c44-c795-477d-a70c-089ccb9ef477",
+      "slotOrder": 25,
+      "homeScore": null,
+      "awayScore": null,
+      "status": "scheduled",
+      "id": "565a74a8-67b9-4825-b0b7-caa7353a1722"
+    }
+  ],
+  "news": [
+    {
+      "id": "c0000001-0000-4000-8000-000000000001",
+      "date": "2026-06-01",
+      "category": "お知らせ",
+      "title": "ボッチャリーグ姫路 2026シーズン開幕のお知らせ",
+      "content": "4月より2026シーズンが開幕します。各節の日程は日程・結果ページをご確認ください。"
+    },
+    {
+      "id": "c0000001-0000-4000-8000-000000000002",
+      "date": "2026-05-20",
+      "category": "試合結果",
+      "title": "第1節 試合結果を更新しました",
+      "content": "第1節の試合結果を更新しました。順位表をご確認ください。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "d0000001-0000-4000-8000-000000000001",
+      "date": "2026-04-15",
+      "title": "第1節 大会レポート",
+      "excerpt": "姫路市立体育館で開催された第1節の様子をお届けします。",
+      "content": "2026年4月12日、姫路市立体育館にてボッチャリーグ姫路第1節が開催されました。"
+    }
+  ],
+  "standingsOverrides": [],
+  "playerAwards": [
+    {
+      "roundId": "8a1bb778-b485-47ff-87f2-f0e9b1c1623b",
+      "teamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "playerId": "3f02c99d-c58f-4c21-806c-0adc9558b030",
+      "absent": true,
+      "superPlay": 0,
+      "unique": 0,
+      "hype": 0
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "3bca58c9-e9a3-476e-a0cb-afebe1eb174c",
+      "playerId": "3f02c99d-c58f-4c21-806c-0adc9558b030",
+      "absent": false,
+      "superPlay": 1,
+      "unique": 0,
+      "hype": 0
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "f04da26e-4ecc-4c45-a298-5fb4fd60aaef",
+      "playerId": "18aae6e0-99e7-46c9-b2df-68a90405162b",
+      "absent": false,
+      "superPlay": 0,
+      "unique": 1,
+      "hype": 1
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "f04ec21f-867f-463e-8d55-7520f798133c",
+      "playerId": "fcd0845e-4384-48ab-9b99-cb017f8e77e3",
+      "absent": false,
+      "superPlay": 0,
+      "unique": 0,
+      "hype": 1
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "1d41053f-cc34-4f80-858a-db0d71d7f931",
+      "playerId": "fba555e4-e9a1-4119-8403-2b1502f5773a",
+      "absent": false,
+      "superPlay": 1,
+      "unique": 0,
+      "hype": 0
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "playerId": "e4394795-932d-4170-9431-3425dcd04867",
+      "absent": false,
+      "superPlay": 1,
+      "unique": 0,
+      "hype": 0
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "playerId": "c150bf04-7827-4c07-ab89-53f906ce04e7",
+      "absent": false,
+      "superPlay": 0,
+      "unique": 0,
+      "hype": 1
+    },
+    {
+      "roundId": "round-1",
+      "teamId": "b6bfa25e-7236-47a4-9beb-51c453f13b3e",
+      "playerId": "48a84195-16e0-4a36-9703-56f0b7c322eb",
+      "absent": false,
+      "superPlay": 1,
+      "unique": 0,
+      "hype": 0
+    }
+  ]
+}

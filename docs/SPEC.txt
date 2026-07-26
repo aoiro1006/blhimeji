@@ -1,0 +1,240 @@
+================================================================================
+ボッチャリーグひめじ 公式サイト — 専門家向け仕様・規模サマリ
+================================================================================
+最終更新: 2026-07-26
+用途: 本番公開・DB移行・レビュー時の共通認識用
+
+※ 実装の正はコード。本書とコードが食い違った場合はコードを優先し、本書を更新する。
+
+
+--------------------------------------------------------------------------------
+0. 合意済みの本番方針（2026-07-26）
+--------------------------------------------------------------------------------
+
+【運用要件】
+- 誰が・どの端末から管理画面を編集しても、公開サイトが同じデータで更新されること
+
+【データ永続化】
+- LeagueData / SiteConfig / SeasonArchive を JSONB 1ドキュメントとして保存（正規化しない）
+- 同一テーブル app_documents。主識別子は document_key:
+    league | site | archive_{season}
+- ライブのリーグデータは document_key=league を常に1件のみ。
+  シーズン終了時は archive_{season} として保存（league 自体は次シーズン用に更新）
+- SUPABASE_SERVICE_ROLE_KEY + NEXT_PUBLIC_SUPABASE_URL があるとき DocumentStore→Supabase
+  未設定時は従来どおり data/league.json 等のファイル（ローカル開発）
+- 楽観的ロック: integer version。保存時に expectedVersion 不一致なら 409 と案内文
+  「他のユーザーが更新しました。最新版を読み込み、内容を確認してから再度保存してください。」
+- 旧 supabase/schema.sql（正規化案）は現行アプリでは未使用
+
+【認証】
+- ローカルモード: ADMIN_PASSWORD（既定 blh2022）+ ADMIN_SECRET
+- Supabase URL/Anon Key 設定時: Supabase Auth（メール+パスワード）に切替
+- ドキュメント書き込みは service role（サーバのみ）。本番ではキーをクライアントに出さない
+- 本番では ADMIN_PASSWORD / ADMIN_SECRET を必ず環境変数で設定
+
+【公開方針】
+- 公開ページに管理・実装寄りの文言を出さない
+- /admin はトップからの導線なし（URL直打ち）。robots で disallow
+
+
+--------------------------------------------------------------------------------
+1. プロダクト概要
+--------------------------------------------------------------------------------
+
+- 名称: ボッチャリーグひめじ（公称表記は「ひめじ」）
+- 内容: 姫路のボッチャリーグ公式 Web（閲覧 + 運営用管理画面）
+- 技術: Next.js 15 App Router / React 19 / TypeScript / Tailwind CSS
+- ホスティング想定: Vercel
+- 連絡先の正: 姫路市公式募集ページ準拠
+  - 団体: パラスポーツフェスはりま
+  - TEL: 090-7098-8649（担当：村上）
+  - Mail: bochahimeji@gmail.com
+  - 参考URL: https://www.city.himeji.lg.jp/kurashi/0000025067.html
+
+
+--------------------------------------------------------------------------------
+2. 規模感（現行 data/league.json スナップショット）
+--------------------------------------------------------------------------------
+
+  シーズン表記          2026
+  チーム数              41（公開表示は ②除外後）
+  節（Round）           7
+  試合（Match）         98
+  組分け割当            33
+  個人賞レコード        8
+  お知らせ              2
+  大会レポート          1
+  アーカイブ JSON       data/archives/2025.json, 2026.json
+  トップスライド画像    public/top-slideshow/ に 8 枚
+  league.json 行数目安  約 2,200 行（単一 JSON ドキュメントとして中規模）
+
+※ ライブデータは「1 シーズン = 1 LeagueData」。過去シーズンはアーカイブ別ファイル。
+
+
+--------------------------------------------------------------------------------
+3. ルート構成（公開 / 管理）
+--------------------------------------------------------------------------------
+
+【公開】
+  /                 トップ（ヒーロー＋お知らせ＋順位＋募集バナー）
+  /about            ボッチャリーグひめじとは / ボッチャとは
+  /entry            エントリー（条件・費用・姫路市公式誘導）
+  /sponsor          スポンサー募集（ナビ非掲載・トップバナー経由）
+  /schedule         日程一覧
+  /schedule/[id]    節詳細（対戦表・本節順位・累計）
+  /standings        A/B 順位＋得点説明
+  /teams            参加チーム（今季参加経験者優先＋ほかを開閉）
+  /awards           個人賞通算
+  /news, /news/[id]
+  /reports, /reports/[id]
+  /archive, /archive/[season]
+  /contact
+
+【ナビ】
+  ヘッダー: トップ / 日程・結果 / 順位 / 個人賞 / チーム一覧
+  ハンバーガー下部アクション: エントリー（赤）/ お問い合わせ（青）
+  ハンバーガー本文に about あり。スポンサーはメニュー非表示
+
+【管理】
+  /admin            パスワード or Supabase ログイン後の編集 UI
+  /api/admin        データ更新 API
+  /api/admin/archives
+  /api/auth
+  /api/data         公開データ取得（読み取り）
+
+
+--------------------------------------------------------------------------------
+4. データモデル（LeagueData）
+--------------------------------------------------------------------------------
+
+単一オブジェクト（src/types/index.ts）:
+
+  season, lastUpdated
+  teams[]                 id(UUID), teamNumber, name, shortName, color,
+                          imageUrl?, players[], displayLeague? (A|B)
+  rounds[]                節。type=league|other, held, resultsFinished,
+                          participatingTeamIds, pointSettings?,
+                          additionalMatches?, parentRoundId?
+  roundAssignments[]      roundId × teamId × group(A–F)
+  matches[]               roundId, group, home/away, scores, status, slotOrder
+  playerAwards[]          節×選手の個人賞・欠席
+  news[], reports[]
+  standingsOverrides[]    手動順位上書き（API のみ・UIなし・使わない方針）
+
+【重要な概念分離】
+  displayLeague (A/B)     … 順位表の所属
+  MatchGroup (A–F)        … その節の試合振り分け。D/E/F は追加試合枠
+  論理節                  … 親 Round + linked 子（追加試合）を合算単位
+
+
+--------------------------------------------------------------------------------
+5. ドメイン仕様（運用ルール）
+--------------------------------------------------------------------------------
+
+【チーム】
+- UUID 固定。削除は運用上行わない
+- teamNumber は保存時に配列順で再付番
+- ②付き shortName は公開チーム一覧から除外
+- 公開 /teams: 今季いずれかの節 participatingTeamIds に入ったチームを初期表示
+  「ほかのチーム」で未出場登録チームを開閉
+
+【節】
+- league: 累計・ポイント対象
+- other: 当日順位のみ（累計外）
+- held: 非公開・累計外
+- resultsFinished: 「入力フェーズ終了」印。ロックはしない
+- 未入力試合があっても節終了可
+- 節終了時: お知らせ自動追加「{節名} 試合結果を更新しました」
+- 次の試合: 公開節のうち resultsFinished でない最初の節
+
+【試合 status】
+- scheduled / in_progress / completed / cancelled
+- 順位・ポイント: completed かつ両スコア入力のみ
+- in_progress は順位未反映（仕様）
+
+【順位（A/B 累計）】
+1. ランキングポイント降順
+2. 勝数
+3. 得失点差
+4. チーム名
+
+【本節・当日順位】
+- 勝数 → 得失点差（ポイント制なし）
+
+【ポイント内訳（デフォルトは pointSettings / pointSettings.ts）】
+  ベースP 300（初参加節のみ・通算1回）
+  勝率P   勝率%そのまま
+  得失P   max(0, 得失点差)×X
+  圧勝P   点差に応じた圧勝点×X（勝利時）
+  ジャイキリP 前節同一リーグで5位以上上位に勝利で+1×X
+              （初出場節のチームが関わる試合は対象外）
+  奮闘P   下位30%チームの勝利×X
+  試合回数P 節内試合数×X
+
+
+--------------------------------------------------------------------------------
+6. 管理画面機能
+--------------------------------------------------------------------------------
+
+  チーム       登録・編集（削除UIあり・運用上非推奨）
+  組み合わせ   節・参加・ABC/DEF・試合順・ポイント倍率
+  エントリー   個人賞入力・エントリー表 PDF/JPG
+  試合結果     スコア・節終了/解除・成績エクスポート
+  ニュース     CRUD
+  アーカイブ   スナップショット作成・編集・削除
+
+エクスポート: html-to-image / jspdf（エントリー表・順位・対戦表）
+
+
+--------------------------------------------------------------------------------
+7. 永続化（DocumentStore）
+--------------------------------------------------------------------------------
+
+【入口】
+  getLeagueData() / 既存 save* … 呼び出し形は維持。内部が DocumentStore。
+  src/lib/documentStore.ts … get/save/list/delete
+  src/lib/documentKeys.ts … league / site / archive_{season}
+  src/lib/supabase/service.ts … service role クライアント
+
+【テーブル】 supabase/app_documents.sql
+  document_key (unique), document_type, season, payload jsonb, version, updated_at
+  RPC save_app_document … version 一致時のみ更新（不一致は 0 行→409）
+
+【管理 API】
+  GET /api/admin → LeagueData + documentVersion
+  PUT /api/admin → expectedVersion 必須（league 系）。競合時 409
+  GET /api/admin/archives → { archives, versions }
+
+【初回投入】
+  node --env-file=.env.local scripts/seed-app-documents.mjs
+
+
+--------------------------------------------------------------------------------
+8. 主要ソース早見
+--------------------------------------------------------------------------------
+
+  data/league.json                 ローカル時のシーズン本体（Supabase 未設定時）
+  data/site.json                   問い合わせ先
+  supabase/app_documents.sql       本番ドキュメント表 + 楽観ロック RPC
+  docs/SPEC.txt                    本書
+  src/types/index.ts               型
+  src/lib/data.ts / site.ts / archives.ts
+  src/lib/documentStore.ts         永続化本体
+  src/lib/points.ts / standings.ts ポイント・順位
+  src/lib/logicalRounds.ts         追加試合・論理節
+  src/lib/auth.ts                  認証
+  src/app/api/admin/route.ts       管理 API（version 付き）
+  src/lib/navigation.ts            ナビ
+
+
+--------------------------------------------------------------------------------
+9. 変更履歴メモ
+--------------------------------------------------------------------------------
+
+2026-07-04  SPEC 初版（ポイント・節終了・②削除など）
+2026-07-07〜 公開ページ拡充（entry/about/sponsor）、表記「ひめじ」、ヒーローMV
+2026-07-26  公開文言の管理寄り表現を整理。チーム一覧を今季参加者優先に。
+            DocumentStore（app_documents + document_key + version 楽観ロック）実装。
+            SPEC を専門家向けサマリとして更新。
+
+================================================================================

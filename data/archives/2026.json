@@ -1,0 +1,235 @@
+{
+  "season": "2026",
+  "title": "2026シーズン",
+  "finalizedAt": "2026-07-04T08:49:56.949Z",
+  "standings": {
+    "leagueA": [
+      {
+        "rank": 1,
+        "team": {
+          "teamNumber": 32,
+          "name": "ペガサス",
+          "shortName": "ペガサス",
+          "color": "#cadbf7"
+        },
+        "rankingPoints": 451,
+        "played": 3,
+        "wins": 3,
+        "losses": 0,
+        "pointsFor": 18,
+        "pointsAgainst": 3,
+        "pointDiff": 15
+      },
+      {
+        "rank": 2,
+        "team": {
+          "teamNumber": 1,
+          "name": "ひびキャッツ",
+          "shortName": "ひびキャッツ",
+          "color": "#ed9999"
+        },
+        "rankingPoints": 437,
+        "played": 5,
+        "wins": 5,
+        "losses": 0,
+        "pointsFor": 16,
+        "pointsAgainst": 3,
+        "pointDiff": 13
+      },
+      {
+        "rank": 3,
+        "team": {
+          "teamNumber": 8,
+          "name": "アイリスシャーク",
+          "shortName": "アイリスシャーク",
+          "color": "#a4c2f8"
+        },
+        "rankingPoints": 411,
+        "played": 5,
+        "wins": 4,
+        "losses": 1,
+        "pointsFor": 17,
+        "pointsAgainst": 10,
+        "pointDiff": 7
+      },
+      {
+        "rank": 4,
+        "team": {
+          "teamNumber": 7,
+          "name": "アイリスフラミンゴ",
+          "shortName": "アイリスフラミン",
+          "color": "#f5ccca"
+        },
+        "rankingPoints": 405,
+        "played": 5,
+        "wins": 4,
+        "losses": 1,
+        "pointsFor": 13,
+        "pointsAgainst": 6,
+        "pointDiff": 7
+      },
+      {
+        "rank": 5,
+        "team": {
+          "teamNumber": 3,
+          "name": "つばさタイガー",
+          "shortName": "つばさタイガー",
+          "color": "#ffd869"
+        },
+        "rankingPoints": 396,
+        "played": 5,
+        "wins": 3,
+        "losses": 2,
+        "pointsFor": 17,
+        "pointsAgainst": 9,
+        "pointDiff": 8
+      },
+      {
+        "rank": 6,
+        "team": {
+          "teamNumber": 16,
+          "name": "あいあいインコ",
+          "shortName": "あいあいインコ",
+          "color": "#b7d6aa"
+        },
+        "rankingPoints": 388,
+        "played": 5,
+        "wins": 3,
+        "losses": 2,
+        "pointsFor": 12,
+        "pointsAgainst": 5,
+        "pointDiff": 7
+      },
+      {
+        "rank": 7,
+        "team": {
+          "teamNumber": 2,
+          "name": "ひびきレインボードックス",
+          "shortName": "ひびきレインボー",
+          "color": "#d9d9d9"
+        },
+        "rankingPoints": 380,
+        "played": 5,
+        "wins": 3,
+        "losses": 2,
+        "pointsFor": 13,
+        "pointsAgainst": 7,
+        "pointDiff": 6
+      },
+      {
+        "rank": 8,
+        "team": {
+          "teamNumber": 5,
+          "name": "リプルスペンギン",
+          "shortName": "リプルスペンギン",
+          "color": "#cadbf7"
+        },
+        "rankingPoints": 375.66666666666663,
+        "played": 3,
+        "wins": 2,
+        "losses": 1,
+        "pointsFor": 7,
+        "pointsAgainst": 4,
+        "pointDiff": 3
+      },
+      {
+        "rank": 9,
+        "team": {
+          "teamNumber": 20,
+          "name": "身障協チキンパワーズ",
+          "shortName": "身障協チキンパワ",
+          "color": "#d30002"
+        },
+        "rankingPoints": 353.57142857142856,
+        "played": 7,
+        "wins": 2,
+        "losses": 5,
+        "pointsFor": 10,
+        "pointsAgainst": 16,
+        "pointDiff": -6
+      },
+      {
+        "rank": 10,
+        "team": {
+          "teamNumber": 17,
+          "name": "あいあいモンキーズ",
+          "shortName": "あいあいモンキー",
+          "color": "#b45f04"
+        },
+        "rankingPoints": 345,
+        "played": 5,
+        "wins": 2,
+        "losses": 3,
+        "pointsFor": 10,
+        "pointsAgainst": 10,
+        "pointDiff": 0
+      },
+      {
+        "rank": 11,
+        "team": {
+          "teamNumber": 9,
+          "name": "アイリスカメレオン",
+          "shortName": "アイリスカメレオ",
+          "color": "#91c57b"
+        },
+        "rankingPoints": 329,
+        "played": 4,
+        "wins": 1,
+        "losses": 3,
+        "pointsFor": 9,
+        "pointsAgainst": 13,
+        "pointDiff": -4
+      },
+      {
+        "rank": 12,
+        "team": {
+          "teamNumber": 4,
+          "name": "つばさホーク",
+          "shortName": "つばさホーク",
+          "color": "#68a852"
+        },
+        "rankingPoints": 325,
+        "played": 5,
+        "wins": 1,
+        "losses": 4,
+        "pointsFor": 3,
+        "pointsAgainst": 19,
+        "pointDiff": -16
+      },
+      {
+        "rank": 13,
+        "team": {
+          "teamNumber": 33,
+          "name": "ホワイトユニコーン",
+          "shortName": "ホワイトユニコー",
+          "color": "#eef0ef"
+        },
+        "rankingPoints": 322.6666666666667,
+        "played": 6,
+        "wins": 1,
+        "losses": 5,
+        "pointsFor": 6,
+        "pointsAgainst": 23,
+        "pointDiff": -17
+      },
+      {
+        "rank": 14,
+        "team": {
+          "teamNumber": 10,
+          "name": "スペシャルチーム",
+          "shortName": "スペシャルチーム",
+          "color": "#999999"
+        },
+        "rankingPoints": 305,
+        "played": 5,
+        "wins": 0,
+        "losses": 5,
+        "pointsFor": 1,
+        "pointsAgainst": 24,
+        "pointDiff": -23
+      }
+    ],
+    "leagueB": []
+  },
+  "gallery": []
+}

@@ -1,0 +1,144 @@
+"use client";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { LeagueData, Match } from "@/types";
+import StandingsShareImage from "@/components/StandingsShareImage";
+import {
+  buildPreviewLeagueData,
+  buildStandingsExportFilename,
+  getStandingsExportContent,
+} from "@/lib/standingsExport";
+
+interface StandingsExportModalProps {
+  data: LeagueData;
+  roundId: string;
+  editedMatches: Match[];
+  onClose: () => void;
+}
+
+export default function StandingsExportModal({
+  data,
+  roundId,
+  editedMatches,
+  onClose,
+}: StandingsExportModalProps) {
+  const captureRef = useRef<HTMLDivElement>(null);
+  const [downloading, setDownloading] = useState(false);
+  const [error, setError] = useState("");
+
+  const previewData = useMemo(
+    () => buildPreviewLeagueData(data, roundId, editedMatches),
+    [data, roundId, editedMatches]
+  );
+
+  const content = useMemo(
+    () => getStandingsExportContent(previewData, roundId),
+    [previewData, roundId]
+  );
+
+  const filename = useMemo(
+    () => buildStandingsExportFilename(data, roundId),
+    [data, roundId]
+  );
+
+  useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+    }
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  const handleDownload = useCallback(async () => {
+    if (!captureRef.current || content.sections.length === 0) return;
+    setDownloading(true);
+    setError("");
+    try {
+      const { toJpeg } = await import("html-to-image");
+      const dataUrl = await toJpeg(captureRef.current, {
+        quality: 0.92,
+        pixelRatio: 2,
+        cacheBust: true,
+        backgroundColor: "#ffffff",
+        skipFonts: false,
+      });
+
+      const link = document.createElement("a");
+      link.href = dataUrl;
+      link.download = filename;
+      link.click();
+    } catch {
+      setError("画像のダウンロードに失敗しました。もう一度お試しください。");
+    } finally {
+      setDownloading(false);
+    }
+  }, [content.sections.length, filename]);
+
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="閉じる"
+        className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"
+        onClick={onClose}
+      />
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="export-modal-title"
+        className="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col"
+      >
+        <div className="h-1 bg-stripe shrink-0" />
+        <div className="px-5 py-4 border-b border-gray-100 flex items-start justify-between gap-3 shrink-0">
+          <div>
+            <h2 id="export-modal-title" className="font-bold text-lg text-primary-dark">
+              順位表プレビュー
+            </h2>
+            <p className="text-sm text-gray-500 mt-1">
+              画面表示どおりの順位表をJPGとして保存できます。
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-2 rounded-full hover:bg-gray-100 text-gray-500 shrink-0"
+            aria-label="閉じる"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="px-5 py-4 overflow-auto flex-1 bg-gray-50">
+          <div className="flex justify-center">
+            <div ref={captureRef} className="shadow-lg rounded-xl border border-gray-200">
+              <StandingsShareImage content={content} />
+            </div>
+          </div>
+        </div>
+
+        <div className="px-5 py-4 bg-gray-50 border-t border-gray-100 shrink-0 space-y-3">
+          {error && <p className="text-sm text-red-600">{error}</p>}
+          <div className="flex flex-col sm:flex-row gap-2">
+            <button
+              type="button"
+              onClick={handleDownload}
+              disabled={downloading || content.sections.length === 0}
+              className="btn-primary flex-1 disabled:opacity-50"
+            >
+              {downloading ? "生成中..." : "JPGをダウンロード"}
+            </button>
+            <button type="button" onClick={onClose} className="btn-secondary flex-1 sm:flex-none sm:min-w-[120px]">
+              閉じる
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
