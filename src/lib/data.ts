@@ -13,6 +13,7 @@ import {
   LEAGUE_DOCUMENT_KEY,
   saveDocument,
 } from "@/lib/documentStore";
+import { isDocumentStoreEnabled } from "@/lib/supabase/service";
 import type {
   DisplayLeague,
   LeagueData,
@@ -76,7 +77,10 @@ function normalizeData(data: LeagueData): LeagueData {
 }
 
 async function readData(): Promise<LeagueData> {
-  if (process.env.NODE_ENV === "development") {
+  // 開発時は毎回読み直し。
+  // 本番で DocumentStore（Supabase）利用時も、サーバレスのインスタンス別メモリに
+  // 古いデータが残ると公開ページが更新されないため、都度 DB から読む。
+  if (process.env.NODE_ENV === "development" || isDocumentStoreEnabled()) {
     memoryCache = null;
     memoryVersion = null;
   }
