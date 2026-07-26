@@ -104,6 +104,13 @@ export default function Sidebar({ open, onClose, onOpen }: SidebarProps) {
             );
           })}
           <p className="text-[10px] text-white/40 tracking-wider text-center pt-1">BOCCIA LEAGUE HIMEJI</p>
+          <Link
+            href="/admin"
+            onClick={onClose}
+            className="block text-center text-[10px] text-white/25 hover:text-white/45 transition-colors tracking-wide py-1"
+          >
+            管理
+          </Link>
         </div>
       </aside>
 
