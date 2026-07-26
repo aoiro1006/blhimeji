@@ -4,6 +4,9 @@ import AppShell from "@/components/AppShell";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
   weight: ["400", "500", "700"],

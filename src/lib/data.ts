@@ -1,3 +1,4 @@
+import { unstable_noStore as noStore } from "next/cache";
 import { formatRoundName, normalizeRoundFields } from "@/lib/rounds";
 import {
   getAdditionalAssignmentRoundId,
@@ -120,10 +121,13 @@ async function writeData(
 }
 
 export async function getLeagueData(): Promise<LeagueData> {
+  // Next.js Data Cache / 静的化を避け、常に最新の league を読む
+  noStore();
   return readData();
 }
 
 export async function getLeagueDocumentVersion(): Promise<number> {
+  noStore();
   if (memoryVersion != null && memoryCache) return memoryVersion;
   const doc = await getDocument<LeagueData>(LEAGUE_DOCUMENT_KEY);
   if (!doc) {

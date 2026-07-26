@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { isAuthenticated } from "@/lib/auth";
 import {
   createArchiveFromCurrentSeason,
@@ -33,6 +34,15 @@ import type {
   PlayerRoundAwards,
   SeasonArchive,
 } from "@/types";
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
+function revalidatePublicPages() {
+  revalidatePath("/", "layout");
+  revalidatePath("/news");
+  revalidatePath("/api/data");
+}
 
 async function requireAuth() {
   const authenticated = await isAuthenticated();
@@ -93,6 +103,7 @@ export async function PUT(request: NextRequest) {
       const archive = payload as SeasonArchive;
       const result = await saveArchive(archive, expectedVersion);
       const archives = await listArchives();
+      revalidatePublicPages();
       return NextResponse.json({
         success: true,
         archives,
@@ -105,6 +116,7 @@ export async function PUT(request: NextRequest) {
       const { season } = payload as { season: string };
       await deleteArchive(season);
       const archives = await listArchives();
+      revalidatePublicPages();
       return NextResponse.json({ success: true, archives });
     }
 
@@ -121,6 +133,7 @@ export async function PUT(request: NextRequest) {
             : existingVersion;
       const result = await saveArchive(archive, expected);
       const archives = await listArchives();
+      revalidatePublicPages();
       return NextResponse.json({
         success: true,
         archive,
@@ -197,6 +210,7 @@ export async function PUT(request: NextRequest) {
         return NextResponse.json({ error: "不明な更新タイプです" }, { status: 400 });
     }
 
+    revalidatePublicPages();
     return NextResponse.json({
       success: true,
       lastUpdated: result.lastUpdated,
