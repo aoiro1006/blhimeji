@@ -61,13 +61,21 @@ export function getMatchPairingsExportContent(
 }
 
 export function buildMatchPairingsExportFilename(data: LeagueData, roundId: string): string {
+  return `${buildMatchPairingsExportBasename(data, roundId)}.jpg`;
+}
+
+export function buildMatchPairingsPdfFilename(data: LeagueData, roundId: string): string {
+  return `${buildMatchPairingsExportBasename(data, roundId)}.pdf`;
+}
+
+function buildMatchPairingsExportBasename(data: LeagueData, roundId: string): string {
   const round = data.rounds.find((r) => r.id === roundId);
   const roundPart = round
     ? round.type === "league" && round.number > 0
       ? `round${round.number}${round.subNumber > 1 ? `-${round.subNumber}` : ""}`
       : round.id.slice(0, 8)
     : "pairings";
-  return `boccia-himeji-${data.season}-pairings-${roundPart}.jpg`;
+  return `boccia-himeji-${data.season}-pairings-${roundPart}`;
 }
 
 /** チームカラー背景に合わせた文字色 */
