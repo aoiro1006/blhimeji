@@ -249,6 +249,7 @@ export default function ResultsEditor({
   onSave,
   onSaveRounds,
   onFinishRound,
+  onPersistComplete,
   saving,
   onEditorStateChange,
 }: {
@@ -256,6 +257,7 @@ export default function ResultsEditor({
   onSave: (matches: Match[]) => Promise<boolean>;
   onSaveRounds: (rounds: Round[]) => Promise<boolean>;
   onFinishRound: (roundId: string) => Promise<boolean>;
+  onPersistComplete?: () => Promise<void>;
   saving: boolean;
   onEditorStateChange?: AdminEditorStateCallback;
 }) {
@@ -320,8 +322,10 @@ export default function ResultsEditor({
   const save = useCallback(async () => {
     const logicalIds = new Set(getLogicalRoundIds(data, selectedRoundId));
     const otherMatches = data.matches.filter((m) => !logicalIds.has(m.roundId));
-    return onSave([...otherMatches, ...edited]);
-  }, [data.matches, selectedRoundId, edited, onSave]);
+    const ok = await onSave([...otherMatches, ...edited]);
+    if (ok) await onPersistComplete?.();
+    return ok;
+  }, [data.matches, selectedRoundId, edited, onSave, onPersistComplete]);
 
   useRegisterAdminEditorState(onEditorStateChange, isDirty, save, discard);
 
@@ -363,7 +367,8 @@ export default function ResultsEditor({
     const updated = data.rounds.map((r) =>
       r.id === selectedRoundId ? { ...r, resultsFinished: false } : r
     );
-    await onSaveRounds(updated);
+    const ok = await onSaveRounds(updated);
+    if (ok) await onPersistComplete?.();
   }
 
   return (

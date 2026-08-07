@@ -125,6 +125,7 @@ export default function ScheduleEditor({
   onGenerate,
   onSaveMatchOrder,
   onDeleteRound,
+  onPersistComplete,
   saving,
   onEditorStateChange,
 }: {
@@ -137,6 +138,8 @@ export default function ScheduleEditor({
     additional: Match[];
   }) => Promise<boolean>;
   onDeleteRound: (roundId: string) => Promise<boolean>;
+  /** 連続保存の最後に最新データを読み直す */
+  onPersistComplete?: () => Promise<void>;
   saving: boolean;
   onEditorStateChange?: AdminEditorStateCallback;
 }) {
@@ -248,6 +251,9 @@ export default function ScheduleEditor({
           additional: additionalMatches,
         })) && ok;
     }
+    if (ok) {
+      await onPersistComplete?.();
+    }
     return ok;
   }, [
     roundsDirty,
@@ -263,6 +269,7 @@ export default function ScheduleEditor({
     onSaveRounds,
     onSaveAssignments,
     onSaveMatchOrder,
+    onPersistComplete,
   ]);
 
   useRegisterAdminEditorState(onEditorStateChange, isDirty, save, discard);
@@ -351,8 +358,11 @@ export default function ScheduleEditor({
 
     setRounds(updatedRounds);
     setAssignments(updatedAssignments);
-    await onSaveRounds(updatedRounds);
-    await onSaveAssignments(updatedAssignments);
+    const okRounds = await onSaveRounds(updatedRounds);
+    const okAssignments = await onSaveAssignments(updatedAssignments);
+    if (okRounds && okAssignments) {
+      await onPersistComplete?.();
+    }
   }
 
   function addLeagueRound() {

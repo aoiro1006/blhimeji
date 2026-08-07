@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import type { LeagueData, Match, SeasonArchive } from "@/types";
 import { ADDITIONAL_MATCH_GROUPS, PRIMARY_MATCH_GROUPS } from "@/lib/matchGroups";
 import type { AdminEditorState } from "@/app/admin/types";
@@ -15,6 +15,11 @@ import AdminToast from "./components/AdminToast";
 
 type Tab = "news" | "teams" | "schedule" | "results" | "awards" | "archives";
 
+type ApiPutOptions = {
+  /** false のとき loadData を省略（連続保存用）。省略時は true */
+  reload?: boolean;
+};
+
 export default function AdminPanel() {
   const [authenticated, setAuthenticated] = useState<boolean | null>(null);
   const [authMode, setAuthMode] = useState<"local" | "supabase">("local");
@@ -23,6 +28,7 @@ export default function AdminPanel() {
   const [loginError, setLoginError] = useState("");
   const [data, setData] = useState<LeagueData | null>(null);
   const [documentVersion, setDocumentVersion] = useState(0);
+  const documentVersionRef = useRef(0);
   const [archives, setArchives] = useState<SeasonArchive[]>([]);
   const [archiveVersions, setArchiveVersions] = useState<Record<string, number>>({});
   const [tab, setTab] = useState<Tab>("teams");
@@ -46,6 +52,7 @@ export default function AdminPanel() {
     const { documentVersion: version, ...league } = json as LeagueData & {
       documentVersion: number;
     };
+    documentVersionRef.current = version;
     setDocumentVersion(version);
     setData(league);
   }, []);
@@ -145,24 +152,40 @@ export default function AdminPanel() {
     return res.ok;
   }
 
-  async function apiPut(type: string, payload?: unknown, roundId?: string): Promise<boolean> {
+  async function apiPut(
+    type: string,
+    payload?: unknown,
+    roundId?: string,
+    options?: ApiPutOptions
+  ): Promise<boolean> {
+    const reload = options?.reload !== false;
     setSaving(true);
     setMessage("");
     const res = await fetch("/api/admin", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ type, payload, roundId, expectedVersion: documentVersion }),
+      body: JSON.stringify({
+        type,
+        payload,
+        roundId,
+        // React state は連続 await のあいだ更新されないため ref を使う
+        expectedVersion: documentVersionRef.current,
+      }),
     });
     const json = await res.json();
     if (res.ok) {
-      setMessage("保存しました");
       if (typeof json.documentVersion === "number") {
+        documentVersionRef.current = json.documentVersion;
         setDocumentVersion(json.documentVersion);
       }
-      await loadData();
+      if (reload) {
+        setMessage("保存しました");
+        await loadData();
+      }
     } else {
       setMessage(json.error || "保存に失敗しました");
       if (res.status === 409) {
+        // 他者更新: 最新を読み込み、ローカル編集は破棄（エディタが props で同期）
         await loadData();
       }
     }
@@ -276,8 +299,10 @@ export default function AdminPanel() {
       {tab === "schedule" && (
         <ScheduleEditor
           data={data}
-          onSaveRounds={(r) => apiPut("rounds", r)}
-          onSaveAssignments={(a) => apiPut("roundAssignments", a)}
+          onSaveRounds={(r) => apiPut("rounds", r, undefined, { reload: false })}
+          onSaveAssignments={(a) =>
+            apiPut("roundAssignments", a, undefined, { reload: false })
+          }
           onGenerate={(roundId, scope = "primary") =>
             apiPut("generateSchedule", { scope }, roundId)
           }
@@ -293,9 +318,15 @@ export default function AdminPanel() {
               }
               return true;
             });
-            return apiPut("matches", [...keep, ...primary, ...additional]);
+            return apiPut("matches", [...keep, ...primary, ...additional], undefined, {
+              reload: false,
+            });
           }}
           onDeleteRound={(roundId) => apiPut("deleteRound", undefined, roundId)}
+          onPersistComplete={async () => {
+            setMessage("保存しました");
+            await loadData();
+          }}
           saving={saving}
           onEditorStateChange={setEditorState}
         />
@@ -304,9 +335,13 @@ export default function AdminPanel() {
         <ResultsEditor
           key="results-editor"
           data={data}
-          onSave={(m) => apiPut("matches", m)}
-          onSaveRounds={(r) => apiPut("rounds", r)}
+          onSave={(m) => apiPut("matches", m, undefined, { reload: false })}
+          onSaveRounds={(r) => apiPut("rounds", r, undefined, { reload: false })}
           onFinishRound={(roundId) => apiPut("finishRound", undefined, roundId)}
+          onPersistComplete={async () => {
+            setMessage("保存しました");
+            await loadData();
+          }}
           saving={saving}
           onEditorStateChange={setEditorState}
         />
