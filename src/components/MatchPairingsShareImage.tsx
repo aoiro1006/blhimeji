@@ -8,9 +8,10 @@ interface MatchPairingsShareImageProps {
   content: MatchPairingsExportContent;
 }
 
-const cellBorder = "border border-gray-300 align-middle py-2";
+const cellBorder = "border border-gray-300 align-middle py-2.5";
 const blankCell = `${cellBorder} bg-white w-9`;
 const countCell = `${cellBorder} bg-black text-white text-center font-bold w-9`;
+const emptyWriteCell = `${cellBorder} bg-white min-h-[2rem]`;
 
 export default function MatchPairingsShareImage({ content }: MatchPairingsShareImageProps) {
   const generatedAt = new Date().toLocaleString("ja-JP", {
@@ -29,7 +30,7 @@ export default function MatchPairingsShareImage({ content }: MatchPairingsShareI
   if (content.roundDate) metaParts.push(formatDateShort(content.roundDate));
 
   return (
-    <div className="w-max min-w-[640px] max-w-none bg-white font-sans text-gray-800">
+    <div className="w-[794px] max-w-none bg-white font-sans text-gray-800">
       <div className="px-4 py-3 border-b border-gray-200">
         <p className="text-xs font-semibold text-primary-dark whitespace-nowrap">
           {metaParts.join(" · ")}
@@ -41,7 +42,7 @@ export default function MatchPairingsShareImage({ content }: MatchPairingsShareI
           この節の組み合わせがありません
         </p>
       ) : (
-        <table className="w-full border-collapse text-sm table-auto">
+        <table className="w-full border-collapse text-sm table-fixed">
           <thead>
             <tr className="bg-neutral-600 text-white">
               <th className="border border-neutral-500 py-2 w-10" />
@@ -59,44 +60,62 @@ export default function MatchPairingsShareImage({ content }: MatchPairingsShareI
             </tr>
           </thead>
           <tbody>
-            {content.rows.map((row) => (
-              <tr key={row.index}>
-                <td className={`${cellBorder} bg-[#6d9eeb] text-white text-center font-bold w-10`}>
-                  {row.index}
-                </td>
-                <td className={blankCell} />
-                <td className={countCell}>{row.homeAppearance}</td>
-                <td
-                  className={`${cellBorder} text-center font-semibold px-2 whitespace-nowrap`}
-                  style={{
-                    backgroundColor: row.homeTeam.color,
-                    color: getContrastTextColor(row.homeTeam.color),
-                  }}
-                >
-                  {row.homeTeam.name}
-                </td>
-                <td className={blankCell} />
-                <td className={`${cellBorder} bg-white text-center text-gray-500 w-9`}>-</td>
-                <td className={blankCell} />
-                <td
-                  className={`${cellBorder} text-center font-semibold px-2 whitespace-nowrap`}
-                  style={{
-                    backgroundColor: row.awayTeam.color,
-                    color: getContrastTextColor(row.awayTeam.color),
-                  }}
-                >
-                  {row.awayTeam.name}
-                </td>
-                <td className={countCell}>{row.awayAppearance}</td>
-                <td className={blankCell} />
-              </tr>
-            ))}
+            {content.rows.map((row) =>
+              row.isBlank ? (
+                <tr key={`blank-${row.index}`}>
+                  <td className={`${cellBorder} bg-[#6d9eeb] text-white text-center font-bold w-10`}>
+                    {row.index}
+                  </td>
+                  <td className={blankCell} />
+                  <td className={emptyWriteCell} />
+                  <td className={`${emptyWriteCell} px-2`} />
+                  <td className={blankCell} />
+                  <td className={`${cellBorder} bg-white text-center text-gray-400 w-9`}>-</td>
+                  <td className={blankCell} />
+                  <td className={`${emptyWriteCell} px-2`} />
+                  <td className={emptyWriteCell} />
+                  <td className={blankCell} />
+                </tr>
+              ) : (
+                <tr key={row.index}>
+                  <td className={`${cellBorder} bg-[#6d9eeb] text-white text-center font-bold w-10`}>
+                    {row.index}
+                  </td>
+                  <td className={blankCell} />
+                  <td className={countCell}>{row.homeAppearance}</td>
+                  <td
+                    className={`${cellBorder} text-center font-semibold px-2 whitespace-nowrap`}
+                    style={{
+                      backgroundColor: row.homeTeam!.color,
+                      color: getContrastTextColor(row.homeTeam!.color),
+                    }}
+                  >
+                    {row.homeTeam!.name}
+                  </td>
+                  <td className={blankCell} />
+                  <td className={`${cellBorder} bg-white text-center text-gray-500 w-9`}>-</td>
+                  <td className={blankCell} />
+                  <td
+                    className={`${cellBorder} text-center font-semibold px-2 whitespace-nowrap`}
+                    style={{
+                      backgroundColor: row.awayTeam!.color,
+                      color: getContrastTextColor(row.awayTeam!.color),
+                    }}
+                  >
+                    {row.awayTeam!.name}
+                  </td>
+                  <td className={countCell}>{row.awayAppearance}</td>
+                  <td className={blankCell} />
+                </tr>
+              )
+            )}
           </tbody>
         </table>
       )}
 
       <p className="text-xs text-gray-400 text-right px-4 py-3 border-t border-gray-100">
         対戦表 · {generatedAt}
+        {content.rows.some((r) => r.isBlank) ? " · 末尾は手書き用空欄" : ""}
       </p>
     </div>
   );

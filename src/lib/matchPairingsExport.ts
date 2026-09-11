@@ -1,14 +1,19 @@
 import { formatRoundDisplayName } from "@/lib/rounds";
 import type { LeagueData, Match, Team } from "@/types";
 
+/** 手書き記入用に末尾へ追加する空欄試合の行数 */
+export const MATCH_PAIRINGS_HANDWRITING_BLANK_ROWS = 4;
+
 export interface MatchPairingExportRow {
   index: number;
-  homeTeam: Team;
-  awayTeam: Team;
+  homeTeam: Team | null;
+  awayTeam: Team | null;
   /** この節の対戦表における、対戦Aチームの何試合目か */
-  homeAppearance: number;
+  homeAppearance: number | null;
   /** この節の対戦表における、対戦Bチームの何試合目か */
-  awayAppearance: number;
+  awayAppearance: number | null;
+  /** 手書き用の空欄行 */
+  isBlank?: boolean;
 }
 
 export interface MatchPairingsExportContent {
@@ -51,6 +56,20 @@ export function getMatchPairingsExportContent(
       awayAppearance,
     });
   });
+
+  if (rows.length > 0) {
+    const startIndex = rows.length;
+    for (let i = 0; i < MATCH_PAIRINGS_HANDWRITING_BLANK_ROWS; i++) {
+      rows.push({
+        index: startIndex + i + 1,
+        homeTeam: null,
+        awayTeam: null,
+        homeAppearance: null,
+        awayAppearance: null,
+        isBlank: true,
+      });
+    }
+  }
 
   return {
     season: data.season,

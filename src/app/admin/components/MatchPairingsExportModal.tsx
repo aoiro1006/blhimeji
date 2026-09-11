@@ -84,7 +84,7 @@ export default function MatchPairingsExportModal({
       const { jsPDF } = await import("jspdf");
 
       const pdf = new jsPDF({
-        orientation: "landscape",
+        orientation: "portrait",
         unit: "mm",
         format: "a4",
       });
@@ -152,7 +152,7 @@ export default function MatchPairingsExportModal({
               対戦表プレビュー
             </h2>
             <p className="text-sm text-gray-500 mt-1">
-              画面表示どおりの対戦表をPDF（A4横）またはJPGで保存できます。
+              PDFはA4縦。末尾に手書き用の空欄試合を4行追加します。JPGでも同じ内容です。
             </p>
           </div>
           <button
