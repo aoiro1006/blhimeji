@@ -12,6 +12,9 @@ const cellBorder = "border border-gray-300 align-middle py-2.5";
 const blankCell = `${cellBorder} bg-white w-9`;
 const countCell = `${cellBorder} bg-black text-white text-center font-bold w-9`;
 const emptyWriteCell = `${cellBorder} bg-white min-h-[2rem]`;
+/** 手書きスコア用（例: 1 - 2）の左右マス */
+const scoreWriteCell = `${cellBorder} bg-white w-14 min-w-[3.5rem]`;
+const scoreHyphenCell = `${cellBorder} bg-white text-center text-gray-500 w-10 min-w-[2.5rem]`;
 
 export default function MatchPairingsShareImage({ content }: MatchPairingsShareImageProps) {
   const generatedAt = new Date().toLocaleString("ja-JP", {
@@ -51,7 +54,11 @@ export default function MatchPairingsShareImage({ content }: MatchPairingsShareI
               <th className="border border-neutral-500 py-2 px-2 text-center font-semibold">
                 対戦A
               </th>
-              <th className="border border-neutral-500 py-1 w-9" colSpan={3} />
+              <th className="border border-neutral-500 py-2 w-14" />
+              <th className="border border-neutral-500 py-2 w-10 text-center font-semibold text-xs">
+                −
+              </th>
+              <th className="border border-neutral-500 py-2 w-14" />
               <th className="border border-neutral-500 py-2 px-2 text-center font-semibold">
                 対戦B
               </th>
@@ -69,9 +76,9 @@ export default function MatchPairingsShareImage({ content }: MatchPairingsShareI
                   <td className={blankCell} />
                   <td className={emptyWriteCell} />
                   <td className={`${emptyWriteCell} px-2`} />
-                  <td className={blankCell} />
-                  <td className={`${cellBorder} bg-white text-center text-gray-400 w-9`}>-</td>
-                  <td className={blankCell} />
+                  <td className={scoreWriteCell} />
+                  <td className={`${scoreHyphenCell} text-gray-400`}>-</td>
+                  <td className={scoreWriteCell} />
                   <td className={`${emptyWriteCell} px-2`} />
                   <td className={emptyWriteCell} />
                   <td className={blankCell} />
@@ -92,9 +99,9 @@ export default function MatchPairingsShareImage({ content }: MatchPairingsShareI
                   >
                     {row.homeTeam!.name}
                   </td>
-                  <td className={blankCell} />
-                  <td className={`${cellBorder} bg-white text-center text-gray-500 w-9`}>-</td>
-                  <td className={blankCell} />
+                  <td className={scoreWriteCell} />
+                  <td className={scoreHyphenCell}>-</td>
+                  <td className={scoreWriteCell} />
                   <td
                     className={`${cellBorder} text-center font-semibold px-2 whitespace-nowrap`}
                     style={{
