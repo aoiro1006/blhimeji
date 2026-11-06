@@ -166,18 +166,31 @@ export default function TeamsEditor({
     setEditingId(null);
   }, [teams]);
 
-  const save = useCallback(async () => onSave(edited), [edited, onSave]);
+  const save = useCallback(async () => {
+    const normalized = edited.map((t) => {
+      const name = t.name.trim() || `チーム${t.teamNumber}`;
+      const shortName = t.shortName.trim() || name;
+      return { ...t, name, shortName };
+    });
+    return onSave(normalized);
+  }, [edited, onSave]);
 
   useRegisterAdminEditorState(onEditorStateChange, isDirty, save, discard);
 
   const editingTeam = edited.find((t) => t.id === editingId);
+
+  function normalizeTeam(team: Team): Team {
+    const name = team.name.trim() || `チーム${team.teamNumber}`;
+    const shortName = team.shortName.trim() || name;
+    return { ...team, name, shortName };
+  }
 
   function addTeam() {
     const newTeam: Team = {
       id: crypto.randomUUID(),
       teamNumber: edited.length + 1,
       name: "新規チーム",
-      shortName: "",
+      shortName: "新規チーム",
       color: "#1a4d8f",
       imageUrl: "",
       players: [],
@@ -188,7 +201,8 @@ export default function TeamsEditor({
   }
 
   function saveTeam(team: Team) {
-    setEdited((prev) => prev.map((t) => (t.id === team.id ? team : t)));
+    const normalized = normalizeTeam(team);
+    setEdited((prev) => prev.map((t) => (t.id === normalized.id ? normalized : t)));
     setEditingId(null);
   }
 

@@ -71,7 +71,7 @@ function MatchOrderList({
         <div key={match.id} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
           <span className="text-xs text-gray-400 w-8">{index + 1}</span>
           <span className={getMatchGroupBadgeClass(match.status, match.group)}>{match.group}</span>
-          <span className="flex-1 text-sm font-medium">
+          <span className="flex-1 min-w-0 text-sm font-medium break-words">
             {getTeamName(match.homeTeamId)} vs {getTeamName(match.awayTeamId)}
           </span>
           <button
@@ -323,7 +323,23 @@ export default function ScheduleEditor({
     [rounds, roundDeletionIds]
   );
 
-  const getTeamName = (id: string) => data.teams.find((t) => t.id === id)?.shortName ?? id;
+  const getTeamName = (id: string) => {
+    const team = data.teams.find((t) => t.id === id);
+    if (!team) return "不明なチーム";
+    const short = team.shortName?.trim();
+    if (short) return short;
+    const name = team.name?.trim();
+    if (name) return name;
+    return `チーム${team.teamNumber}`;
+  };
+
+  const unassignedPrimaryTeams = useMemo(() => {
+    if (!selectedRoundId || !selectedRound) return [];
+    const primaryId = getPrimaryAssignmentRoundId({ rounds }, selectedRoundId);
+    return participatingTeams.filter(
+      (t) => !getTeamAssignmentInGroups(assignments, primaryId, t.id, PRIMARY_MATCH_GROUPS)
+    );
+  }, [selectedRoundId, selectedRound, rounds, participatingTeams, assignments]);
 
   function toggleParticipant(teamId: string) {
     setParticipantDraft((prev) => {
@@ -635,7 +651,21 @@ export default function ScheduleEditor({
               {selectedRound && participatingTeams.length > 0 && (
                 <button
                   type="button"
-                  onClick={() => void onGenerate(selectedRoundId, "primary")}
+                  onClick={() => {
+                    if (unassignedPrimaryTeams.length > 0) {
+                      const names = unassignedPrimaryTeams
+                        .map((t) => t.shortName?.trim() || t.name)
+                        .join("、");
+                      if (
+                        !confirm(
+                          `グループ未割当のチームが ${unassignedPrimaryTeams.length} 件あります。\n${names}\n\nこのまま生成すると試合に含まれません。続行しますか？`
+                        )
+                      ) {
+                        return;
+                      }
+                    }
+                    void onGenerate(selectedRoundId, "primary");
+                  }}
                   disabled={saving}
                   className="btn-secondary text-sm disabled:opacity-50"
                 >
@@ -964,6 +994,15 @@ export default function ScheduleEditor({
           <p className="text-sm text-gray-500 mb-4">
             試合の振り分け用グループです。順位表示のA/Bリーグとは別に管理します。
           </p>
+          {unassignedPrimaryTeams.length > 0 && (
+            <div className="mb-4 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+              未割当 {unassignedPrimaryTeams.length} 件（
+              {unassignedPrimaryTeams
+                .map((t) => t.shortName?.trim() || t.name)
+                .join("、")}
+              ）。組み合わせ生成に含まれません。
+            </div>
+          )}
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
